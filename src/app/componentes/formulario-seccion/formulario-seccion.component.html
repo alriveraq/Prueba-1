@@ -1,0 +1,13 @@
+<section>
+  <fieldset>
+    <label>Ingrese ID de la Seccion</label>
+    <input type="number" [value]="Seccion.id" (input)="inid($event)">
+  </fieldset>
+  <fieldset>
+    <label>Ingrese el nombre de la Seccion</label>
+    <input type="text" [value]="Seccion.nombre_seccion" (input)="inseccion($event)">
+  </fieldset>
+  <fieldset>
+    <button type="button" (click)="guardarelemnt()">Guardar</button>
+  </fieldset>
+</section>
