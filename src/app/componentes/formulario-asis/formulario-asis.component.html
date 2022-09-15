@@ -1,1 +1,15 @@
-<p>formulario-asis works!</p>
+<section>
+  <fieldset>
+    <label>Ingrese fecha</label>
+    <input type="text" [value]="Historial.fecha" (input)="infecha($event)">
+  </fieldset>
+  <fieldset>
+    <label>Selecione alumno</label>
+    <select [value]="Historial.alumno_asis" (change)="inalumno($event)">
+      <option *ngFor="let alumno_asis of listaalum " [value]="alumno_asis">
+        {{alumno_asis.nombre}}
+      </option>
+    </select>
+  </fieldset>
+    <button type="button" (click)="guardarelemt3()">Guardar</button>
+</section>

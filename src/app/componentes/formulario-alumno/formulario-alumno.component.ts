@@ -16,15 +16,15 @@ export class FormularioAlumnoComponent{
       id: 0,
       nombre_seccion: ''
     }
-
-
   }
-  public listarseccion: Array<seccion> = [
+  @Input() public listarseccion: Array<seccion> =[
     {
       id: 1,
-      nombre_seccion: "007D"
+      nombre_seccion: '007D'
     }
+
   ]
+
   public inrut(evento: Event): void{
     const elemento = evento.target as HTMLInputElement;
     this.Alumno.rut = elemento.value;

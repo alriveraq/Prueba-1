@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { alumno } from './modelos/alumno';
 import { seccion } from './modelos/seccion';
+import { historial } from './modelos/historial';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,11 @@ export class AppComponent {
   ]
   public listaralumno: Array<alumno> = [
   ]
+  public listarasis: Array<historial> = [
+  ]
+  public escucharasis(nuevaasis: historial):void{
+    this.listarasis.push(nuevaasis);
+  }
   public escucharseccion(nuevaseccion: seccion):void{
     this.listarseccion.push(nuevaseccion);
   }

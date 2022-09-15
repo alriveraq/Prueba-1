@@ -9,6 +9,7 @@ import {FormularioSeccionComponent} from './componentes/formulario-seccion/formu
 import { ListaComponent } from './componentes/lista/lista.component'
 import { SeccionComponent } from './componentes/seccion/seccion.component';
 import { AlumnoComponent } from './componentes/alumno/alumno.component';
+import { HistorialComponent } from './componentes/historial/historial.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AlumnoComponent } from './componentes/alumno/alumno.component';
     FormularioSeccionComponent,
     SeccionComponent,
     ListaComponent,
-    AlumnoComponent
+    AlumnoComponent,
+    HistorialComponent
   ],
   imports: [
     BrowserModule,
